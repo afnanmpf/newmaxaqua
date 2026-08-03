@@ -400,3 +400,58 @@ section[id] {
     line-height: 1.4;
     word-break: break-all;
 }
+
+/*=============================
+    Large desktops (1600px and up)
+    Scoped to >= 1600px only — nothing below this width is affected.
+===============================*/
+@media (min-width: 1600px) {
+    /* use more of the wide viewport instead of leaving big side gutters */
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1480px;
+    }
+    /* the FAQ image starts 100px to the right (AOS fade-left) — keep that
+       entry animation from creating a horizontal scrollbar on wide screens */
+    .faq-area {
+        overflow-x: clip;
+    }
+
+    /* green filter cards — bigger product shots */
+    .green-filter-card .team-thumb {
+        padding: 30px;
+        border-radius: 36px;
+    }
+    .green-filter-card .team-thumb img {
+        height: 340px;
+    }
+
+    /* vessel cards — bigger product shots */
+    .vessel-card .team-thumb {
+        padding: 40px 25px 55px;
+    }
+    .vessel-card .team-thumb img {
+        height: 320px;
+    }
+    .vessel-card .team-content .title {
+        font-size: 22px;
+    }
+
+    /* purifier product cards — bigger product shots */
+    .product-card .project-thumb img {
+        height: 420px;
+        padding: 40px 40px 20px;
+    }
+
+    /* keep the rest of the page in proportion with the wider container */
+    .about-img-wrap img:nth-child(1) {
+        height: 720px;
+    }
+    .section-title .title {
+        font-size: 50px;
+    }
+}
