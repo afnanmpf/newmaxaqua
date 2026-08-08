@@ -107,7 +107,7 @@ body {
 img,
 .img {
 	max-width: 100%;
-	transition: all 0.3s ease-out 0s;
+	transition: all 0.18s ease-out 0s;
 }
 .f-left {
 	float: left
@@ -120,11 +120,11 @@ img,
 }
 a,
 button {
-	-webkit-transition: all 0.3s ease-out 0s;
-	-moz-transition: all 0.3s ease-out 0s;
-	-ms-transition: all 0.3s ease-out 0s;
-	-o-transition: all 0.3s ease-out 0s;
-	transition: all 0.3s ease-out 0s;
+	-webkit-transition: all 0.18s ease-out 0s;
+	-moz-transition: all 0.18s ease-out 0s;
+	-ms-transition: all 0.18s ease-out 0s;
+	-o-transition: all 0.18s ease-out 0s;
+	transition: all 0.18s ease-out 0s;
 	text-decoration: none;
 }
 a:focus,
@@ -306,7 +306,7 @@ label {
 	text-align: center;
 	text-transform: uppercase;
 	touch-action: manipulation;
-	transition: .5s cubic-bezier(.76, .49, .25, 1);
+	transition: 0.3s cubic-bezier(.76, .49, .25, 1);
 	vertical-align: middle;
 	white-space: nowrap;
 	position: relative;
@@ -323,9 +323,9 @@ label {
 	-webkit-transform: translateX(-100%) skew(-30deg);
 	-moz-transform: translateX(-100%) skew(-30deg);
 	transform: translateX(-100%) skew(-30deg);
-	-webkit-transition: .5s cubic-bezier(.76, .49, .25, 1);
-	-moz-transition: .5s cubic-bezier(.76, .49, .25, 1);
-	transition: .5s cubic-bezier(.76, .49, .25, 1);
+	-webkit-transition: 0.3s cubic-bezier(.76, .49, .25, 1);
+	-moz-transition: 0.3s cubic-bezier(.76, .49, .25, 1);
+	transition: 0.3s cubic-bezier(.76, .49, .25, 1);
 	left: -25px;
 	width: 135%;
 	z-index: -1;
@@ -365,7 +365,7 @@ label {
 	text-align: center;
 	cursor: pointer;
 	background: var(--tg-primary-color);
-	transition: 1s ease;
+	transition: 0.6s ease;
 	border: none;
 }
 .scroll-top.open {
@@ -509,7 +509,7 @@ label {
 	border-radius: 5px;
 	height: 4px;
 	background: var(--tg-green);
-	transition: .4s;
+	transition: 0.24s;
 	opacity: 0;
 }
 .navbar-wrap > ul > li > a:hover::before,
@@ -567,11 +567,11 @@ label {
 	margin: 0 0;
 	transform: scale(1 , 0);
 	transform-origin: 0 0;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.18s ease-in-out;
+	-moz-transition: all 0.18s ease-in-out;
+	-ms-transition: all 0.18s ease-in-out;
+	-o-transition: all 0.18s ease-in-out;
+	transition: all 0.18s ease-in-out;
 	-webkit-box-shadow: 0px 30px 70px 0px rgba(137,139,142,0.15);
 	-moz-box-shadow: 0px 30px 70px 0px rgba(137,139,142,0.15);
 	box-shadow: 0px 30px 70px 0px rgba(137,139,142,0.15);
@@ -598,11 +598,11 @@ label {
 	font-weight: 500;
 	color: var(--tg-blue);
 	text-transform: capitalize;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.18s ease-in-out;
+	-moz-transition: all 0.18s ease-in-out;
+	-ms-transition: all 0.18s ease-in-out;
+	-o-transition: all 0.18s ease-in-out;
+	transition: all 0.18s ease-in-out;
 }
 .navbar-wrap ul li .sub-menu li a:hover,
 .navbar-wrap ul li .sub-menu li.active a {
@@ -787,11 +787,11 @@ label {
 	height: 100%;
 	z-index: 99;
 	border-radius: 0px;
-	transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	-moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	-webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	-ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86)e;
-	-o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: all 0.18s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition: all 0.18s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-webkit-transition: all 0.18s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-ms-transition: all 0.18s cubic-bezier(0.785, 0.135, 0.15, 0.86)e;
+	-o-transition: all 0.18s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 	-webkit-transform: translateX(101%);
 	-ms-transform: translateX(101%);
 	transform: translateX(101%);
@@ -822,11 +822,11 @@ label {
 	width: 100%;
 	height: 100%;
 	z-index: 2;
-	transition: all 700ms ease;
-	-moz-transition: all 700ms ease;
-	-webkit-transition: all 700ms ease;
-	-ms-transition: all 700ms ease;
-	-o-transition: all 700ms ease;
+	transition: all 420ms ease;
+	-moz-transition: all 420ms ease;
+	-webkit-transition: all 420ms ease;
+	-ms-transition: all 420ms ease;
+	-o-transition: all 420ms ease;
 	opacity: 0;
 	visibility: hidden;
 	background: rgba(0, 0, 0, 0.5);
@@ -864,9 +864,9 @@ label {
     color: #292b37;
     cursor: pointer;
     z-index: 10;
-    -webkit-transition: all 0.9s ease;
-    -o-transition: all 0.9s ease;
-    transition: all 0.9s ease;
+    -webkit-transition: all 0.54s ease;
+    -o-transition: all 0.54s ease;
+    transition: all 0.54s ease;
 }
 .mobile-menu-visible .mobile-menu .close-btn {
 	-webkit-transform: rotate(360deg);
@@ -905,9 +905,9 @@ label {
     font-weight: 700;
     color: var(--tg-heading-font-color);
     text-transform: capitalize;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
     border: none;
 }
 .mobile-menu .navigation li ul li > a {
@@ -927,9 +927,9 @@ label {
 	left: 0;
 	top: 0;
 	height: 0;
-	-webkit-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
 }
 .mobile-menu .navigation li.menu-item-has-children .dropdown-btn {
 	position: absolute;
@@ -944,15 +944,15 @@ label {
 	background: var(--tg-blue);
 	cursor: pointer;
 	border-radius: 2px;
-	-webkit-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
 	z-index: 5;
 }
 .mobile-menu .navigation li.menu-item-has-children .dropdown-btn i {
-	-webkit-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
 }
 .mobile-menu .navigation li.menu-item-has-children .dropdown-btn.open i {
 	-webkit-transform: rotate(45deg);
@@ -988,9 +988,9 @@ label {
 	line-height: 32px;
 	font-size: 16px;
 	color: var(--tg-heading-font-color);
-	-webkit-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
 	border: 1px solid var(--tg-gray);
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -1170,7 +1170,7 @@ label {
 	height: 25px;
 	border: 1.5px solid var(--tg-white);
 	border-radius: 50%;
-	transition: all 0.3s ease-out 0s;
+	transition: all 0.18s ease-out 0s;
 	opacity: 0;
 }
 .slider-active .slick-dots li.slick-active button::before {
@@ -1434,7 +1434,7 @@ label {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 	width: 100%;
 	height: 50px;
 	cursor: pointer;
@@ -1830,7 +1830,7 @@ label {
 	right: 0;
 	bottom: 0;
 	top: 0;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 }
 .services-item:hover .services-bg-shape svg {
 	color: var(--tg-primary-color);
@@ -1855,7 +1855,7 @@ label {
 	flex: 0 0 50px;
 	line-height: 1;
 	margin-right: 12px;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 }
 .services-content-top .icon svg {
 	width: 25px;
@@ -1869,11 +1869,11 @@ label {
 	margin-bottom: 0;
 }
 .services-content-top .title a {
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 }
 .services-content p {
 	margin-bottom: 0;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 }
 .services-item:hover .services-content p,
 .services-item:hover .services-content-top .title a:hover,
@@ -1906,7 +1906,7 @@ label {
 	position: absolute;
 	left: 32px;
 	top: -50px;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 	z-index: 1;
 }
 .services-icon-two svg {
@@ -1922,7 +1922,7 @@ label {
 	background: var(--tg-blue);
 	transform: scale(0);
 	border-radius: 50%;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 	z-index: -1;
 }
 .services-item-two:hover .services-icon-two {
@@ -1973,7 +1973,7 @@ label {
 }
 .services-thumb-three img {
 	transform: scale(1);
-	transition: .3s ease;
+	transition: 0.18s ease;
 }
 .services-item-three:hover .services-thumb-three img {
 	transform: scale(1.1);
@@ -2168,7 +2168,7 @@ label {
 	background: var(--tg-white);
 	border-radius: 10px;
 	z-index: -1;
-    transition: .3s;
+    transition: 0.18s;
 }
 .services-item-five:hover::before {
 	opacity: 0;
@@ -2184,7 +2184,7 @@ label {
 	border-radius: 10px;
 	z-index: -1;
 	opacity: 0;
-	transition: .3s;
+	transition: 0.18s;
 }
 .services-item-five:hover::after {
 	opacity: .75;
@@ -2204,7 +2204,7 @@ label {
 	left: 50%;
 	transform: translateX(-50%);
 	top: -45px;
-	transition: .3s;
+	transition: 0.18s;
 }
 .services-item-five .services-icon svg {
 	width: 35px;
@@ -2217,14 +2217,14 @@ label {
 	margin-bottom: 10px;
 }
 .services-content-five .title a {
-	transition: .3s;
+	transition: 0.18s;
 }
 .services-content-five .title a:hover {
 	color: var(--tg-white);
 }
 .services-content-five p {
 	margin-bottom: 0;
-	transition: .3s;
+	transition: 0.18s;
 }
 .services-item-five:hover .services-content-five p,
 .services-item-five:hover .services-content-five .title {
@@ -2392,7 +2392,7 @@ label {
 	color: var(--tg-primary-color);
 	border: 1.5px solid var(--tg-primary-color);
 	z-index: 1;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 	background: var(--tg-white);
 }
 .work-icon::before {
@@ -2405,7 +2405,7 @@ label {
 	background: var(--tg-primary-color);
 	border-radius: 50%;
 	transform: scale(0);
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 	opacity: 0;
 	z-index: -1;
 }
@@ -2615,7 +2615,7 @@ label {
 	font-weight: 700;
 	color: var(--tg-blue);
 	background: var(--tg-gray-five);
-	transition: all 0.3s linear 0s;
+	transition: all 0.18s linear 0s;
 	border-radius: 50%;
 	font-family: "Font Awesome 5 Free";
 	line-height: 0;
@@ -2844,7 +2844,7 @@ label {
 	padding: 35px 60px;
 	background: var(--tg-blue);
 	text-align: center;
-	transition: .3s linear;
+	transition: 0.18s linear;
 }
 .pricing-box:hover .pricing-top {
 	background: var(--tg-primary-color);
@@ -2915,7 +2915,7 @@ label {
 	position: relative;
 	margin-top: -42px;
 	padding: 14px 40px;
-	transition: .3s linear;
+	transition: 0.18s linear;
 }
 .team-item:hover .team-content {
 	background: var(--tg-blue);
@@ -2949,7 +2949,7 @@ label {
 	color: var(--tg-white);
 	border-radius: 50%;
 	cursor: pointer;
-	transition: .3s ease-in;
+	transition: 0.18s ease-in;
 }
 .team-social:hover .social-toggle-icon {
 	background: var(--tg-secondary-color);
@@ -2964,10 +2964,10 @@ label {
 	gap: 7px;
 	opacity: 0;
 	visibility: hidden;
-	transition: .3s ease;
+	transition: 0.18s ease;
 }
 .team-social ul li {
-    transition: .3s ease;
+    transition: 0.18s ease;
 }
 .team-social ul li a {
 	width: 45px;
@@ -3014,13 +3014,13 @@ label {
 	border: 10px solid var(--tg-primary-color);
 	overflow: hidden;
 	margin-bottom: 25px;
-    transition: .3s linear;
+    transition: 0.18s linear;
 }
 .team-item-two:hover .team-thumb-two {
     border-color: var(--tg-secondary-color);
 }
 .team-thumb-two img {
-	transition: .3s linear;
+	transition: 0.18s linear;
 	transform: scale(1);
 }
 .team-item-two:hover .team-thumb-two img {
@@ -3446,7 +3446,7 @@ label {
 }
 .project-thumb img {
 	transform: scale(1);
-	transition: .3s ease-in;
+	transition: 0.18s ease-in;
 	width: 100%;
 }
 .project-item:hover .project-thumb img {
@@ -3487,7 +3487,7 @@ label {
 	background: transparent;
 	position: relative;
 	opacity: 1;
-	transition: .3s linear;
+	transition: 0.18s linear;
 }
 .project-swiper-pagination .swiper-pagination-bullet::before {
 	content: "";
@@ -3500,7 +3500,7 @@ label {
 	background: transparent;
 	border: 1.5px solid var(--tg-white);
 	border-radius: 50%;
-	transition: .3s linear;
+	transition: 0.18s linear;
 	opacity: 0;
 }
 .project-swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
@@ -3630,7 +3630,7 @@ label {
 	height: 100%;
 	transform: scale(.85);
 	background: var(--tg-blue);
-	transition: .3s;
+	transition: 0.18s;
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
@@ -3649,7 +3649,7 @@ label {
 	transform: translateY(-50%);
 	opacity: 0;
 	margin-top: 80px;
-	transition: .4s;
+	transition: 0.24s;
 }
 .project-item-three:hover .project-content-three {
 	margin-top: 0;
@@ -3838,7 +3838,7 @@ label {
 	left: -15px;
 	top: 50%;
 	transform: translateY(-50%);
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
 }
 .project-next-prev .post a:hover {
@@ -3872,7 +3872,7 @@ label {
     background: var(--tg-white);
     margin-bottom: 30px;
     border: 1px solid #dddd;
-    transition: .3s ease-in;
+    transition: 0.18s ease-in;
 }
 .testimonial-item:hover {
     border-color: var(--tg-primary-color);
@@ -4041,7 +4041,7 @@ label {
 .brand-item img {
 	opacity: 0.15;
 	cursor: pointer;
-	transition: .3s linear;
+	transition: 0.18s linear;
 }
 .brand-item img:hover {
 	opacity: 1;
@@ -4098,7 +4098,7 @@ label {
 	border-radius: 20px;
 	padding: 15px 28px 25px;
 	position: relative;
-	transition: .3s ease;
+	transition: 0.18s ease;
 	overflow: hidden;
 	margin-bottom: 25px;
 }
@@ -4133,7 +4133,7 @@ label {
 	opacity: 0;
 	visibility: hidden;
 	transform: translateX(100%);
-	transition: visibility .3s ease-out .1s, opacity .3s ease-out .15s, transform .3s ease-out .1s;
+	transition: visibility 0.18s ease-out 0.06s, opacity 0.18s ease-out 0.09s, transform 0.18s ease-out 0.06s;
 }
 .shop-thumb .shop-action a:first-child {
 	transition-delay: .10s;
@@ -4362,7 +4362,7 @@ label {
 }
 .blog-post-thumb img {
 	border-radius: 10px;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 }
 .blog-post-item:hover .blog-post-thumb img {
 	filter: grayscale(100%);
@@ -4379,7 +4379,7 @@ label {
 	line-height: 1;
 	border-radius: 0px 0px 0px 5px;
 	padding: 12px 22px;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 }
 .blog-post-item:hover .blog-post-thumb .tag {
 	background: var(--tg-primary-color);
@@ -4428,7 +4428,7 @@ label {
 }
 .blog-thumb-two img {
 	transform: scale(1);
-	transition: .3s ease-out;
+	transition: 0.18s ease-out;
 }
 .blog-item-two:hover .blog-thumb-two img {
 	transform: scale(1.05);
@@ -4759,7 +4759,7 @@ label {
 	left: -15px;
 	top: 50%;
 	transform: translateY(-50%);
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
 }
 .blog-details-wrap .blog-next-prev .post a:hover {
@@ -4946,7 +4946,7 @@ label {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	transition: .3s ease-in-out;
+	transition: 0.18s ease-in-out;
 	width: 100%;
 	height: 50px;
 	cursor: pointer;
@@ -4993,7 +4993,7 @@ label {
 	left: 50%;
 	transform: translateX(-50%);
 	top: -40px;
-	transition: .3s linear;
+	transition: 0.18s linear;
 }
 .inner-contact-info-item:hover .icon {
 	background: var(--tg-secondary-color);
@@ -5203,8 +5203,8 @@ label {
 	-webkit-transform: scale(0, 1);
 	-ms-transform: scale(0, 1);
 	transform: scale(0, 1);
-	-webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-	transition: transform 0.4s cubic-bezier(.74, .72, .27, .24);
+	-webkit-transition: transform 0.24s cubic-bezier(1, 0, 0, 1);
+	transition: transform 0.24s cubic-bezier(.74, .72, .27, .24);
 }
 .fw-link-list .list-wrap li a:hover::before {
 	-webkit-transform-origin: left top;
@@ -5298,8 +5298,8 @@ label {
 	-webkit-transform: scale(0, 1);
 	-ms-transform: scale(0, 1);
 	transform: scale(0, 1);
-	-webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-	transition: transform 0.4s cubic-bezier(.74, .72, .27, .24);
+	-webkit-transition: transform 0.24s cubic-bezier(1, 0, 0, 1);
+	transition: transform 0.24s cubic-bezier(.74, .72, .27, .24);
 }
 .footer-bottom-menu .list-wrap li a:hover::before {
 	-webkit-transform-origin: left top;

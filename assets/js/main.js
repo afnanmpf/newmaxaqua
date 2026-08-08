@@ -130,7 +130,13 @@
 		});
 		BasicSlider.slick({
 			autoplay: true,
-			autoplaySpeed: 5000,
+			autoplaySpeed: 2500,
+			speed: 400,
+			cssEase: 'linear',
+			infinite: true,
+			pauseOnHover: false,
+			pauseOnFocus: false,
+			pauseOnDotsHover: false,
 			dots: true,
 			fade: true,
 			arrows: false,
@@ -163,7 +169,7 @@
 	$('.brand-active').slick({
 		dots: false,
 		infinite: true,
-		speed: 1000,
+		speed: 600,
 		autoplay: true,
 		arrows: false,
 		slidesToShow: 6,
@@ -211,7 +217,7 @@
 	$('.services-active').slick({
 		dots: true,
 		infinite: true,
-		speed: 1000,
+		speed: 600,
 		autoplay: true,
 		arrows: false,
 		slidesToShow: 4,
@@ -266,7 +272,7 @@
 	$('.services-active-two').slick({
 		dots: false,
 		infinite: true,
-		speed: 1000,
+		speed: 600,
 		autoplay: true,
 		arrows: false,
 		slidesToShow: 5,
@@ -322,7 +328,7 @@
 	$('.testimonial-active').slick({
 		dots: false,
 		infinite: true,
-		speed: 1000,
+		speed: 600,
 		autoplay: true,
 		arrows: true,
 		prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
@@ -373,7 +379,7 @@
 	$('.testimonial-active-two').slick({
 		dots: true,
 		infinite: true,
-		speed: 1000,
+		speed: 600,
 		autoplay: true,
 		arrows: false,
 		slidesToShow: 3,
@@ -420,7 +426,7 @@
 	$('.history-active').slick({
 		dots: false,
 		infinite: true,
-		speed: 1000,
+		speed: 600,
 		autoplay: true,
 		arrows: true,
 		prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
@@ -470,7 +476,7 @@
 	$('.team-active').slick({
 		dots: false,
 		infinite: true,
-		speed: 1000,
+		speed: 600,
 		autoplay: true,
 		arrows: true,
 		prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
@@ -690,7 +696,7 @@
 	=============================================*/
 	function aosAnimation() {
 		AOS.init({
-			duration: 1000,
+			duration: 600,
 			mirror: true,
 			once: true,
 			disable: 'mobile',
