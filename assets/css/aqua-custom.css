@@ -465,3 +465,18 @@ section[id] {
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(.22, .61, .36, 1);
 }
+
+/* hero slide 4 — video background sits under the .slider-bg::before dark overlay */
+.slider-video {
+	overflow: hidden;
+}
+.slider-video-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: -2;
+}

@@ -123,10 +123,12 @@
 		BasicSlider.on('init', function (e, slick) {
 			var $firstAnimatingElements = $('.single-slider:first-child').find('[data-animation]');
 			doAnimations($firstAnimatingElements);
+			syncSlideVideo(slick.currentSlide);
 		});
 		BasicSlider.on('beforeChange', function (e, slick, currentSlide, nextSlide) {
 			var $animatingElements = $('.single-slider[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
 			doAnimations($animatingElements);
+			syncSlideVideo(nextSlide);
 		});
 		BasicSlider.slick({
 			autoplay: true,
@@ -144,6 +146,45 @@
 				{ breakpoint: 767, settings: { dots: false, arrows: false } }
 			]
 		});
+
+		BasicSlider.find('.slider-video-bg')
+			.on('ended', releaseVideoSlide)
+			.on('error', releaseVideoSlide);
+
+		// the video slide holds the slider until its clip has played through,
+		// then hands control back to autoplay
+		var videoFallback = null;
+
+		function releaseVideoSlide() {
+			if (videoFallback) {
+				clearTimeout(videoFallback);
+				videoFallback = null;
+			}
+			BasicSlider.slick('slickNext');
+			BasicSlider.slick('slickPlay');
+		}
+
+		function syncSlideVideo(index) {
+			BasicSlider.find('.slider-video-bg').each(function () {
+				var video = this;
+				var slideIndex = parseInt($(video).closest('.single-slider').attr('data-slick-index'), 10);
+				if (slideIndex !== index) {
+					video.pause();
+					return;
+				}
+				BasicSlider.slick('slickPause');
+				video.currentTime = 0;
+				var started = video.play();
+				if (started && started.catch) {
+					started.catch(releaseVideoSlide);
+				}
+				// safety net so a stalled clip can never trap the slider
+				if (videoFallback) {
+					clearTimeout(videoFallback);
+				}
+				videoFallback = setTimeout(releaseVideoSlide, ((video.duration || 8) + 1) * 1000);
+			});
+		}
 
 		function doAnimations(elements) {
 			var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
